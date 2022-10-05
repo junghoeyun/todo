@@ -1,0 +1,20 @@
+form input[type="submit"], 
+form input[type="button"], 
+#todo-board li button {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+#todo-board {
+    list-style: none;
+    margin-right: 40px;
+}
+#todo-board li{
+    clear: both;
+    margin-top: 10px;
+}
+
+#todo-board input{
+    width: 30px;
+    height: 30px;
+}
