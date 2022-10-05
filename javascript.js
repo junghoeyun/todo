@@ -48,7 +48,7 @@ function todoCheck(e) {
     if (e.target.checked) 
     li.style.color = "lightgray";
     else 
-    li.style.color = "white";
+    li.style.color = "black";
     countItem();
 }
 
@@ -57,10 +57,13 @@ function todoDelete(e) {
     // li요소를 삭제
     const li = e.target.parentNode;
     li.remove();
+    countItem();
+
 }
 
 
 function countItem() {
     let checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
     count.innerHTML = checkedCount;
+
 }
